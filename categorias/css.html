@@ -2,12 +2,12 @@
 <html lang="es" dir="ltr">
 <head>
     <meta charset="utf-8">
-    
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Practica Estilos 1</title>
     <link rel="stylesheet" href="../css/estilos.css" />
     <style>
-        
+
     </style>
 </head>
 
@@ -38,6 +38,10 @@
         <article>
             <h3>Incluir css en EL MISMO Documento HTML</h3>
             <p>
+                referencia: <a href="https://uniwebsidad.com/libros/css/capitulo-6             
+            "></a>
+            </p>
+            <p>
                 Los estilos se definen en una zona específica del propio documento HTML. Se emplea la etiqueta <em>style</em> de HTML y solamente se pueden incluir en la cabecera del documento (sólo dentro de la sección <em>head</em> ).
             </p>
             <p>
@@ -50,29 +54,85 @@
             <p>
                 Los ejemplos mostrados en este libro utilizan este método para aplicar CSS al contenido HTML de las páginas. De esta forma el código de los ejemplos es más conciso y se aprovecha mejor el espacio.
             </p>
-             </article>
+        </article>
 
-            <artticle>
-                <h3>Definir CSS en un archivo externo</h3>
-                <p>
-                    En este caso, todos los estilos CSS se incluyen en un archivo de tipo CSS que las páginas HTML enlazan mediante la etiqueta
-                    <link>. Un archivo de tipo CSS no es más que un archivo simple de texto cuya extensión es .css Se pueden crear todos los archivos CSS que sean necesarios y cada página HTML puede enlazar tantos archivos CSS como necesite.
-                </p>
-                <p>
-                    Si se quieren incluir los estilos del ejemplo anterior en un archivo CSS externo, se deben seguir los siguientes pasos:
-                </p>
-                <ol>
-                    <li>Se crea un archivo de texto y se le añade solamente el siguiente contenido:
-                        <ul>
-                            <li><span class=verde>p</span> { color: black; font-family: Verdana;} </li>
-                        </ul>
-                    </li>
-                    <li>Se guarda el archivo de texto con el nombre <em>estilos</em>.css Se debe poner especial atención a que el archivo tenga extensión <em>.css</em> y no <em>.txt</em></li>
-                    <li>En la página HTML se enlaza el archivo CSS externo mediante la etiqueta
-                       <em>link </em>>:
-                    </li>
-                </ol>
-            </artticle>       
+        <artticle>
+            <h3 class="pepe">Definir CSS en un archivo externo</h3>
+            <p class="todomayusculas pepe">
+                Este texto está en small-caps
+            </p>
+            <p class="alineadoderecha">
+                Este texto está alineado a la derecha
+            </p>
+            <p class="alineadocentro">
+                Este texto está alineado al centro
+            </p>
+
+            <p class="alineadojustificado">
+                En este caso, todos los estilos CSS se incluyen en un archivo de tipo CSS que las páginas HTML enlazan mediante la etiqueta
+                <link>. Un archivo de tipo CSS no es más que un archivo simple de texto cuya extensión es .css Se pueden crear todos los archivos CSS que sean necesarios y cada página HTML puede enlazar tantos archivos CSS como necesite.
+            </p>
+            <p>
+                Si se quieren incluir los estilos del ejemplo anterior en un archivo CSS externo, se deben seguir los siguientes pasos:
+            </p>
+            <ol>
+                <li>Se crea un archivo de texto y se le añade solamente el siguiente contenido:
+                    <ul>
+                        <li><span class=verde>p</span> { color: black; font-family: Verdana;} </li>
+                    </ul>
+                </li>
+                <li>Se guarda el archivo de texto con el nombre <em>estilos</em>.css Se debe poner especial atención a que el archivo tenga extensión <em>.css</em> y no <em>.txt</em></li>
+                <li>En la página HTML se enlaza el archivo CSS externo mediante la etiqueta
+                    <em>link </em>>:
+                </li>
+            </ol>
+        </artticle>
+        <article>
+            <h3>Prioridades en CSS</h3>
+            <ol>
+                <li id="violeta"> class="rosa">Selector id (color violeta)</li>
+                <li class="rosa">Selector de clase (color pink) </li>
+                <li>Selector varias etiquetas anidadas(color azul)</li>
+                <li>Selector 1 etiqueta (es el que menos manda)(color tomato)</li>
+            </ol>
+
+            <h3>Estilos para textos</h3>
+            <table class="azul">
+                <caption>TIPOGRAFÍA EN CSS</caption>
+                <thead>
+                    <tr>
+                        <th>Propiedad</th>
+                        <th>Descripción</th>
+                    </tr>
+
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>color</td>
+                        <td>colores web</td>
+
+                    </tr>
+                    <tr>
+                        <td>font-family</td>
+                        <td>tipo de letra</td>
+
+                    </tr>
+                    <tr>
+                        <td>font-size</td>
+                        <td>tamño de letra</td>
+
+                    </tr>
+                    <tr>
+                        <td>font-weight</td>
+                        <td>Grosor de letra</td>
+
+                    </tr>
+                    <tr>
+                        <td>font-style</td>
+                        <td>normal o itálica</td>
+                </tbody>
+            </table>
+        </article>
     </section>
     <section>
         <article>
